@@ -8,9 +8,9 @@ var NytAPIKey = "n0MXIKtdoTP0TGIXEBn3dResJCtNHSai";
 
 $("#search-button").click(function (event) {
   event.preventDefault();
-  var searchAuthor = $("#search-author").val();
-  var searchTitle = $("search-book").val();
-  var searchISBN = $("#search-isbn").val();
+  var searchAuthor = $(".search-author").val();
+  var searchTitle = $(".search-book").val();
+  var searchISBN = $(".search-isbn").val();
   var responseURL =
     "https://www.googleapis.com/books/v1/volumes?q=" +
     searchAuthor +
