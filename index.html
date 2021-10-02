@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search function</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- search functionality -->
+    <div>
+      <button id="search-button">Search</button>
+      <textarea
+        id="search-book"
+        id="search-author"
+        id="search-isbn"
+        placeholder="Title, ISBN, Author"
+      ></textarea>
+
+      <div id="search-result" class="search-result"></div>
+    </div>
+    <!-- apend search results -->
+    <section class="search-container">
+      <h1>Your results</h1>
+      <div class="search-list"></div>
+    </section>
+
+    <!-- best-seller -->
+    <aside id="bestseller-title">Best Sellers</aside>
+    <div id="best-seller-container"></div>
+
+    <!-- end of best seller -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
