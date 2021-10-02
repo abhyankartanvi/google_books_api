@@ -22,6 +22,7 @@ $("#search-button").click(function (event) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+    $("#search-result").html("");
     for (var i = 0; i < response.items.length; i++) {
       var title = response.items[i].volumeInfo.title;
       console.log(title);
